@@ -7,7 +7,7 @@ const testText = [
     "Peter Piper picked a peck of pickled peppers.",
     "Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn't very fuzzy, now was he!", 
     "This is randomly generated text. Not that exciting, I know. Sorry."
-]
+];
 
 var timer = [0,0,0,0];
 var interval;
@@ -15,9 +15,9 @@ var timerRunning = false;
 
 // Generate random text for the test
 function randomText() {
-    i = Math.floor(Math.random() * testText.length);
+    let i = Math.floor(Math.random() * testText.length);
     originText.innerHTML = testText[i];
-};
+}
 
 
 // Add leading zero to numbers 9 or below (purely for aesthetics):
